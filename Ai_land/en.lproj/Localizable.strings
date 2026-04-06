@@ -1,0 +1,205 @@
+/* Language */
+"lang_onboarding_title" = "Welcome to Ai-land";
+"lang_onboarding_subtitle" = "Choose your interface language. You can change this anytime in Settings › General.";
+"lang_mode_system" = "Follow System";
+"lang_mode_english" = "English";
+"lang_mode_chinese" = "Simplified Chinese";
+"lang_continue" = "Continue";
+
+/* Settings — panes */
+"pane_general" = "General";
+"pane_island" = "Island & Window";
+"pane_agents" = "AI Agents";
+"pane_permissions" = "Permissions";
+
+/* Settings — language */
+"settings_section_language" = "Language";
+"settings_language_hint" = "Changes apply immediately. “Follow System” uses macOS preferred languages.";
+
+/* Settings — General */
+"settings_task_feedback" = "Task completion";
+"settings_play_sound" = "Play completion sound";
+"settings_success_sound" = "Success";
+"settings_failure_sound" = "Failure";
+"settings_preview_success" = "Preview success sound";
+"settings_preview_failure" = "Preview failure sound";
+"settings_system_notify" = "Send system notification";
+"settings_notify_footer" = "Works with hook parameter silent=1: no system notification when silent, island strip may still show.";
+"settings_interaction" = "Interaction (Ask)";
+"settings_sound_on_interaction" = "Play sound when interaction arrives";
+"settings_current_interaction_sound" = "Current interaction sound";
+"settings_preview_interaction" = "Preview interaction sound";
+"settings_sound_library_header" = "Sound library";
+"settings_sound_library_footer" = "Audio from the **music** folder in the app bundle and **macOS system sounds** (/System/Library/Sounds). Each row: Preview, Success, Failure, Interaction; selection is outlined.";
+"settings_animation" = "Animation";
+"settings_reduce_zodiac_motion" = "Reduce zodiac motion on island";
+"settings_reduce_zodiac_footer" = "Stacks with System Settings › Accessibility › Display › Reduce motion.";
+"settings_diagnostics" = "Diagnostics";
+"settings_copy_diagnostics" = "Copy diagnostics to clipboard";
+"settings_diagnostics_footer" = "Version, socket path, hook files (no secrets).";
+"sound_preview" = "Preview";
+"sound_success" = "Success";
+"sound_failure" = "Failure";
+"sound_interact" = "Interact";
+"help_sound_preview" = "Preview this sound";
+"help_sound_success" = "Set as task success sound";
+"help_sound_failure" = "Set as task failure sound";
+"help_sound_interact" = "Set as interaction sound";
+
+/* Settings — Island */
+"settings_zodiac_header" = "Zodiac (compact)";
+"settings_zodiac_subtitle" = "Vector animals: blink, tail; faster pulse while running; glow and checkmark on completion.";
+"settings_window_sizes" = "Window size (pt)";
+"settings_total_width" = "Total width";
+"settings_total_width_footer" = "Actual width is max(this, wider compact/expanded content + 48) to avoid clipping.";
+"settings_compact_height" = "Compact height";
+"settings_compact_height_footer" = "Expanded height follows task list and Ask content, capped near ~94% of visible screen.";
+"settings_compact_content_width" = "Compact content width";
+"settings_expanded_content_width" = "Expanded content width";
+"settings_reset_layout" = "Reset layout defaults";
+"settings_screen_position" = "Screen position";
+"settings_offset_x" = "Horizontal offset";
+"settings_offset_y" = "Vertical offset";
+"settings_offset_footer" = "Relative to horizontal center: positive right; vertical positive moves up (macOS Y).";
+"settings_reset_offset" = "Reset position offset";
+
+/* Settings — Agents */
+"settings_startup_auto" = "Startup auto-configure";
+"settings_configured" = "Configured";
+"settings_refresh_status" = "Refresh status";
+"settings_agents_hooks" = "Agents & hooks";
+"settings_install_hooks" = "Install or update %@ hooks";
+"hook_alert_ok" = "OK";
+"hook_configure_title" = "Hook configuration";
+"hook_configure_fail" = "Could not configure";
+
+/* Settings — Permissions */
+"settings_refresh_perm" = "Refresh status";
+"settings_permissions_list" = "Permissions";
+"perm_request" = "Request";
+"settings_request_all_perm" = "Request all permissions";
+
+/* Permissions */
+"perm_accessibility" = "Accessibility";
+"perm_automation" = "Automation";
+"perm_filesystem" = "File system";
+"perm_network" = "Network";
+"perm_status_granted" = "Granted";
+"perm_status_denied" = "Denied";
+"perm_status_not_requested" = "Not requested";
+"perm_status_unknown" = "Unknown";
+
+/* Agent status */
+"agent_idle" = "Idle";
+"agent_busy" = "Busy";
+"agent_error_format" = "Error: %@";
+
+/* Configuration status */
+"cfg_not_detected" = "Not detected";
+"cfg_detected" = "Detected";
+"cfg_configured" = "Configured";
+"cfg_error_format" = "Error: %@";
+
+/* Auto-configure summary */
+"auto_cfg_summary_errors" = "Auto-configure: added %d, already %d, failures %d";
+"auto_cfg_no_agents" = "No AI agents detected for auto-configure";
+"auto_cfg_summary_ok" = "Auto-configure: added %d, already %d";
+
+/* Island / CLI — main UI */
+"cli_clear_all" = "Clear All";
+"cli_empty_title" = "No tasks yet";
+"cli_empty_body" = "Claude Code: after you submit a prompt → running; Stop → normal end; StopFailure / tool interrupt also ends (cancel may not fire Stop). Quit → SessionEnd. No in-flight task if you open CLI without a question.\nManual URL:";
+"cli_empty_footer" = "Note: state=waiting_confirm; branch=, progress=0–100, streaming generating=1.";
+"cli_preview_title" = "Recent chat preview";
+"cli_turn_prefix" = "Turn %d";
+"menu_rename" = "Rename…";
+"menu_copy_workspace" = "Copy workspace path";
+"menu_copy_task_url" = "Copy ai-land task URL";
+"menu_remove" = "Remove from list";
+"toast_task_done" = "Task completed";
+"toast_task_ended" = "Task ended";
+"jump_button" = "Jump";
+"dismiss_toast_help" = "Dismiss";
+"cli_a11y_jump" = "Jump to terminal window, %@";
+"compact_a11y_idle" = "%@, idle";
+"compact_a11y_running" = "%@, in progress";
+"compact_a11y_confirm" = "%@, awaiting confirmation";
+"compact_a11y_completed" = "%@, round just finished";
+"help_refresh" = "Refresh";
+"help_settings" = "Open Settings";
+"help_quit_format" = "Quit %@";
+"rename_task_title" = "Rename task";
+"field_title" = "Title";
+"cancel" = "Cancel";
+"save" = "Save";
+"remove_from_list_help" = "Remove from list";
+"remove_from_list_a11y" = "Remove from list";
+
+/* Task status */
+"status_running" = "Running";
+"status_waiting_confirm" = "Awaiting confirm";
+"status_completed" = "Done";
+"status_completed_fail" = "Ended (failed)";
+
+/* Relative time */
+"rel_just_now" = "Just now";
+"rel_secs_ago" = "%d s ago";
+"rel_mins_ago" = "%d min ago";
+"rel_hours_ago" = "%d hr ago";
+"rel_days_ago" = "%d d ago";
+
+"unnamed_project" = "Untitled";
+
+/* Assistant label */
+"assist_claude_code_terminal" = "Claude Code (Terminal)";
+
+/* Interaction palette */
+"interaction_title_format" = "%@ · %@";
+"interaction_tool_permissions" = "Tool permissions";
+"interaction_ask_user" = "Ask";
+"interaction_close_means_deny" = "Close counts as deny";
+"interaction_tool_perm_explain" = "The CLI is asking to run a tool. The island is expanded—tap Allow or Deny here without leaving the editor.";
+"deny" = "Deny";
+"allow" = "Allow";
+"deny_help_format" = "Deny: %@";
+"allow_help_format" = "Allow: %@";
+"plan_permission_request" = "Permission request";
+"edit" = "Edit";
+
+/* Quit alert */
+"quit_title_format" = "Quit %@?";
+"quit_message" = "Are you sure you want to quit?";
+"quit_cancel" = "Cancel";
+"quit_confirm" = "Quit";
+
+/* CLI row help */
+"cli_help_click" = "Click: same as terminal list, activate by match score.";
+"cli_help_jump_detail" = "Precise jump: iTerm2, Ghostty 1.3+, cmux, Terminal, Warp, VS Code/Cursor/Windsurf integrated terminal (VSIX); best-effort: Alacritty, Kitty, Hyper, etc.";
+"cli_help_signal" = "This task includes host hints (TTY/session)—jump is more accurate.";
+"cli_help_finder_note" = "Does not open Finder or switch workspace via editor CLI.";
+
+/* Hook install messages */
+"hook_err_not_in_path" = "Could not find `%@` in PATH.\nInstall the official CLI and try again.";
+"hook_claude_resync" = "Claude Code: re-synced scripts and hook entries in settings.\n\n%@";
+"hook_claude_new" = "Claude Code: wrote hooks and merged AskUserQuestion, SessionEnd, Stop, StopFailure, PostToolUseFailure, UserPromptSubmit (cancellations and interrupts are handled when possible).\n\n%@";
+"hook_exists_format" = "Hook for %@ already exists.\n\n%@";
+"hook_installed_format" = "Installed hook for %@.\n\n%@\n\nIf the tool requires manual hook registration, point it to this script per its docs.";
+"hook_err_no_cli" = "CLI not detected.";
+"hook_err_install_failed" = "Install failed: %@";
+"hook_err_incomplete" = "Install incomplete; check directory permissions: %@";
+
+"plan_diff_empty_placeholder" = "// (plan body empty)";
+
+/* Zodiac short names */
+"zodiac_rat" = "Rat";
+"zodiac_ox" = "Ox";
+"zodiac_tiger" = "Tiger";
+"zodiac_rabbit" = "Rabbit";
+"zodiac_dragon" = "Dragon";
+"zodiac_snake" = "Snake";
+"zodiac_horse" = "Horse";
+"zodiac_goat" = "Goat";
+"zodiac_monkey" = "Monkey";
+"zodiac_rooster" = "Rooster";
+"zodiac_dog" = "Dog";
+"zodiac_pig" = "Pig";

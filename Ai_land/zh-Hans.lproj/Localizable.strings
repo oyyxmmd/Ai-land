@@ -1,0 +1,201 @@
+/* Language */
+"lang_onboarding_title" = "欢迎使用 Ai-land";
+"lang_onboarding_subtitle" = "请选择界面语言。之后可在「设置 › 通用」中随时更改。";
+"lang_mode_system" = "跟随系统";
+"lang_mode_english" = "English";
+"lang_mode_chinese" = "简体中文";
+"lang_continue" = "开始使用";
+
+/* Settings — panes */
+"pane_general" = "通用";
+"pane_island" = "灵动岛与窗口";
+"pane_agents" = "AI 代理";
+"pane_permissions" = "权限";
+
+/* Settings — language */
+"settings_section_language" = "语言";
+"settings_language_hint" = "更改后立即生效。「跟随系统」将使用 macOS 的首选语言列表。";
+
+/* Settings — General */
+"settings_task_feedback" = "任务完成反馈";
+"settings_play_sound" = "播放完成提示音";
+"settings_success_sound" = "成功";
+"settings_failure_sound" = "失败";
+"settings_preview_success" = "试听当前成功音";
+"settings_preview_failure" = "试听当前失败音";
+"settings_system_notify" = "发送系统通知";
+"settings_notify_footer" = "与钩子参数 silent=1 配合：静默时不发系统通知，岛上仍可显示完成条。";
+"settings_interaction" = "交互（问道）";
+"settings_sound_on_interaction" = "交互到来时播放提示音";
+"settings_current_interaction_sound" = "当前交互音";
+"settings_preview_interaction" = "试听当前交互音";
+"settings_sound_library_header" = "音效列表";
+"settings_sound_library_footer" = "下列音频来自工程目录 music（打包后位于 App 资源目录），以及 macOS 系统音效（/System/Library/Sounds）。每行有「试听、成功、失败、交互」；已选会以描边标出。";
+"settings_animation" = "动画";
+"settings_reduce_zodiac_motion" = "减弱灵动岛生肖动效";
+"settings_reduce_zodiac_footer" = "可与系统「辅助功能 › 显示 › 减少动态效果」叠加；开启后收起态生肖动画停在静态帧。";
+"settings_diagnostics" = "诊断";
+"settings_copy_diagnostics" = "复制诊断信息到剪贴板";
+"settings_diagnostics_footer" = "含版本、Socket 路径说明、钩子文件是否存在（不含密钥）。";
+"sound_preview" = "试听";
+"sound_success" = "成功";
+"sound_failure" = "失败";
+"sound_interact" = "交互";
+"help_sound_preview" = "试听此音效";
+"help_sound_success" = "设为任务完成（成功）";
+"help_sound_failure" = "设为任务完成（失败）";
+"help_sound_interact" = "设为问道 / 交互到来";
+
+/* Settings — Island */
+"settings_zodiac_header" = "生肖图标（收起态）";
+"settings_zodiac_subtitle" = "自绘矢量小动物：眨眼、摆尾等；进行中律动更快；完成时有光晕与对勾。";
+"settings_window_sizes" = "窗口尺寸（pt）";
+"settings_total_width" = "总宽度";
+"settings_total_width_footer" = "实际贴屏宽度取 max(本值, 收起/展开内容较宽者 + 48)，避免内容被裁切。";
+"settings_compact_height" = "收起高度";
+"settings_compact_height_footer" = "展开时窗高随任务列表与「问道」选项由内容撑开，上限约为当前屏可视高度的 94%。";
+"settings_compact_content_width" = "收起内容宽度";
+"settings_expanded_content_width" = "展开内容宽度";
+"settings_reset_layout" = "恢复默认尺寸";
+"settings_screen_position" = "屏幕位置";
+"settings_offset_x" = "水平偏移";
+"settings_offset_y" = "垂直偏移";
+"settings_offset_footer" = "相对水平居中：右正左负；垂直正值整体上移（macOS 底为 0）。";
+"settings_reset_offset" = "重置位置偏移";
+
+/* Settings — Agents */
+"settings_startup_auto" = "启动时自动配置";
+"settings_configured" = "已配置";
+"settings_refresh_status" = "刷新状态";
+"settings_agents_hooks" = "代理与钩子";
+"settings_install_hooks" = "安装或更新 %@ 钩子";
+"hook_alert_ok" = "好";
+"hook_configure_title" = "钩子配置";
+"hook_configure_fail" = "无法配置";
+
+/* Settings — Permissions */
+"settings_refresh_perm" = "刷新状态";
+"settings_permissions_list" = "各项权限";
+"perm_request" = "请求";
+"settings_request_all_perm" = "请求所有权限";
+
+/* Permissions */
+"perm_accessibility" = "辅助功能";
+"perm_automation" = "自动化";
+"perm_filesystem" = "文件系统";
+"perm_network" = "网络";
+"perm_status_granted" = "已授予";
+"perm_status_denied" = "已拒绝";
+"perm_status_not_requested" = "未请求";
+"perm_status_unknown" = "未知";
+
+/* Agent status */
+"agent_idle" = "空闲";
+"agent_busy" = "忙碌";
+"agent_error_format" = "错误：%@";
+
+/* Configuration status */
+"cfg_not_detected" = "未检测到";
+"cfg_detected" = "已检测";
+"cfg_configured" = "已配置";
+"cfg_error_format" = "错误：%@";
+
+/* Auto-configure summary */
+"auto_cfg_summary_errors" = "自动配置完成：新增 %d，已配置 %d，失败 %d";
+"auto_cfg_no_agents" = "未检测到可自动配置的 AI 代理";
+"auto_cfg_summary_ok" = "自动配置完成：新增 %d，已配置 %d";
+
+/* Island / CLI */
+"cli_clear_all" = "清除全部";
+"cli_empty_title" = "尚无任务记录";
+"cli_empty_body" = "Claude Code：提交提示后→运行中；Stop→正常结束本轮；StopFailure / 工具中断→也会收尾（取消时常不触发 Stop）。退出→SessionEnd。进入 CLI 未提问不会显示进行中。\n也可手动：";
+"cli_empty_footer" = "待确认：state=waiting_confirm；分支 branch=、进度 progress=0–100、流式 generating=1。";
+"cli_preview_title" = "最近对话预览";
+"cli_turn_prefix" = "第 %d 轮";
+"menu_rename" = "重命名…";
+"menu_copy_workspace" = "复制工作区路径";
+"menu_copy_task_url" = "复制 ai-land 任务 URL";
+"menu_remove" = "从列表移除";
+"toast_task_done" = "任务已完成";
+"toast_task_ended" = "任务已结束";
+"jump_button" = "跳转";
+"dismiss_toast_help" = "关闭提示";
+"cli_a11y_jump" = "跳转到终端窗口，%@";
+"compact_a11y_idle" = "%@，空闲";
+"compact_a11y_running" = "%@，进行中";
+"compact_a11y_confirm" = "%@，待确认";
+"compact_a11y_completed" = "%@，刚完成一轮";
+"help_refresh" = "刷新";
+"help_settings" = "打开设置";
+"help_quit_format" = "退出 %@";
+"rename_task_title" = "重命名任务";
+"field_title" = "标题";
+"cancel" = "取消";
+"save" = "保存";
+"remove_from_list_help" = "从列表移除";
+"remove_from_list_a11y" = "从列表移除";
+
+/* Task status */
+"status_running" = "运行中";
+"status_waiting_confirm" = "待确认";
+"status_completed" = "已完成";
+"status_completed_fail" = "已结束（失败）";
+
+/* Relative time */
+"rel_just_now" = "刚刚";
+"rel_secs_ago" = "%d秒前";
+"rel_mins_ago" = "%d分钟前";
+"rel_hours_ago" = "%d小时前";
+"rel_days_ago" = "%d天前";
+
+"unnamed_project" = "未命名";
+
+"assist_claude_code_terminal" = "Claude Code（终端）";
+
+/* Interaction */
+"interaction_title_format" = "%@ · %@";
+"interaction_tool_permissions" = "工具权限";
+"interaction_ask_user" = "问道";
+"interaction_close_means_deny" = "关闭视为拒绝";
+"interaction_tool_perm_explain" = "CLI 正在请求运行工具权限。灵动岛已展开，请直接在面板中点「允许」或「拒绝」，无需离开编辑器。";
+"deny" = "拒绝";
+"allow" = "允许";
+"deny_help_format" = "拒绝：%@";
+"allow_help_format" = "允许：%@";
+"plan_permission_request" = "权限请求";
+"edit" = "编辑";
+
+/* Quit */
+"quit_title_format" = "退出 %@？";
+"quit_message" = "确定要退出应用吗？";
+"quit_cancel" = "取消";
+"quit_confirm" = "退出";
+
+"cli_help_click" = "点击：与终端列表相同，按匹配分数依次激活。";
+"cli_help_jump_detail" = "精确跳转：iTerm2、Ghostty 1.3+、cmux、Terminal、Warp、VS Code/Cursor/Windsurf 集成终端（VSIX）；尽力匹配：Alacritty、Kitty、Hyper 等。";
+"cli_help_signal" = "本任务含宿主提示（TTY/会话），跳转更准。";
+"cli_help_finder_note" = "不打开访达，不通过编辑器 CLI 切换工作区。";
+
+"hook_err_not_in_path" = "未在 PATH 中检测到 `%@`。\n请安装官方 CLI 后重试。";
+"hook_claude_resync" = "Claude Code：已重新同步脚本与 settings 中的钩子项。\n\n%@";
+"hook_claude_new" = "Claude Code：已写入钩子，并合并 AskUserQuestion、SessionEnd、Stop、StopFailure、PostToolUseFailure、UserPromptSubmit（取消/中断也会尽量收尾）。\n\n%@";
+"hook_exists_format" = "「%@」钩子已存在。\n\n%@";
+"hook_installed_format" = "已为「%@」安装钩子。\n\n%@\n\n若该工具需手动注册 hook，请按其文档指向上述脚本。";
+"hook_err_no_cli" = "未检测到 CLI。";
+"hook_err_install_failed" = "安装失败：%@";
+"hook_err_incomplete" = "安装未完成，请检查目录权限：%@";
+
+"plan_diff_empty_placeholder" = "// （计划正文为空）";
+
+"zodiac_rat" = "鼠";
+"zodiac_ox" = "牛";
+"zodiac_tiger" = "虎";
+"zodiac_rabbit" = "兔";
+"zodiac_dragon" = "龙";
+"zodiac_snake" = "蛇";
+"zodiac_horse" = "马";
+"zodiac_goat" = "羊";
+"zodiac_monkey" = "猴";
+"zodiac_rooster" = "鸡";
+"zodiac_dog" = "狗";
+"zodiac_pig" = "猪";
