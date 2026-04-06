@@ -1,10 +1,27 @@
+<div align="center">
+
 # Ai-land
 
-**macOS 上的 AI 命令行伴侣**：以「灵动岛」式悬浮条展示 CLI 任务、审阅询问与完成状态，并与多款编码代理（Claude Code、Codex、Gemini CLI 等）通过钩子与本地通道联动。
+**macOS 上的 AI 命令行伴侣**
+
+**简体中文** · [English](README.en.md)
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![macOS](https://img.shields.io/badge/macOS-15.5%2B-000000?logo=apple&logoColor=white)](https://developer.apple.com/macos/)
+[![Swift](https://img.shields.io/badge/Swift-5-F05138?logo=swift&logoColor=white)](https://swift.org)
+[![Xcode](https://img.shields.io/badge/Xcode-SwiftUI-007ACC?logo=xcode&logoColor=white)](https://developer.apple.com/xcode/)
+
+<br/>
+
+</div>
+
+> 以「灵动岛」式悬浮条展示 CLI 任务、审阅询问与完成状态，并与多款编码代理（Claude Code、Codex、Gemini CLI 等）通过钩子与本地通道联动。
 
 ## 简介
 
-Ai-land 是原生 Swift / SwiftUI 应用，窗口贴在屏幕边缘，收起时以紧凑形态展示状态；展开后可浏览任务列表、处理代理发起的确认选项，并通过自定义 URL 与外部工具协作跳转。
+**Ai-land** 是原生 Swift / SwiftUI 应用，窗口贴在屏幕边缘，收起时以紧凑形态展示状态；展开后可浏览任务列表、处理代理发起的确认选项，并通过自定义 URL 与外部工具协作跳转。
+
+项目思路参考了部分**vibe island**内容，因为不想付费使用闭源产品开发此项目，在此声明一下，想要原生效果的请前往。
 
 ## 功能概览
 
@@ -78,3 +95,22 @@ Info.plist         # 与工程配合的附加 Info 配置
 ## 链接
 
 - 源码与 Issue：<https://github.com/oyyxmmd/Ai-land>
+
+## 其他
+
+非专业开发，肯定会存在部分问题，欢迎提 Issue。同时大家可以自行修改，特邀一起共建此项目，欢迎 PR。
+
+## 以下是部分预览图
+
+![预览4](images/预览4.png)
+
+![预览1](images/预览1.png)
+
+![预览2](images/预览2.png)
+
+![预览3](images/预览3.png)
+
+---
+
+<p align="center"><b>简体中文</b> · <a href="README.en.md">English</a></p>
+

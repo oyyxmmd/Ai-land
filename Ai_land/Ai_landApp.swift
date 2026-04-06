@@ -77,6 +77,9 @@ private func dispatchAiLandURL(_ url: URL) {
 final class AiLandAppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ notification: Notification) {
+        // 尽早设为 accessory，避免岛窗首配之前仍以普通应用短暂出现在 Dock。
+        // `configureWindow` 内仍会再设一次，行为一致且无害。
+        NSApp.setActivationPolicy(.accessory)
         _ = SocketManager.shared
     }
     
