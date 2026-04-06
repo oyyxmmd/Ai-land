@@ -1046,7 +1046,7 @@ struct ContentView: View {
                     .font(.system(size: 12, weight: .medium))
                     .foregroundColor(.blue)
                     .frame(width: 28, height: 28)
-                    .background(
+![1775455497933](image/ContentView/1775455497933.png)![1775455500995](image/ContentView/1775455500995.png)![1775455519523](image/ContentView/1775455519523.png)                    .background(
                         RoundedRectangle(cornerRadius: 6, style: .continuous)
                             .fill(Color.black.opacity(0.9))
                     )

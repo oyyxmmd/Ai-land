@@ -21,7 +21,6 @@
 
 **Ai-land** is a native Swift / SwiftUI app whose window sits at the screen edge: collapsed, it shows a compact status strip; expanded, you get the task list, agent-driven confirmation choices, and custom URL handoffs to external tools.
 
-This project was partly inspired by **vibe island**; we built an open alternative instead of paying for a closed product—if you want their exact native experience, please use their offering.
 
 ## Features
 
