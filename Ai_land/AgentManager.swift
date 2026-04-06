@@ -143,7 +143,7 @@ class AgentManager {
             .flatMap { AiLandURLRouting.clampField($0, maxChars: AiLandPayloadLimits.hookArgs) }
         
         guard let assistant else { return }
-        guard let type = AIAssistantType.allCases.first(where: { $0.executableName == assistant }) else { return }
+        guard let type = AIAssistantType.resolve(from: assistant) else { return }
         
         // 立即标记为 busy，短暂保持（hook 通常在“开始执行”时触发）
         updateStatus(type, status: .busy)

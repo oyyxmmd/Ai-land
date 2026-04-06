@@ -44,6 +44,39 @@ enum AIAssistantType: String, CaseIterable {
     }
 }
 
+extension AIAssistantType {
+    /// 口语/文档/大小写与可执行名混用时映射到枚举（含 OpenCode / `opencode`）。
+    private static let aliasMap: [String: AIAssistantType] = {
+        var m: [String: AIAssistantType] = [:]
+        func add(_ keys: [String], _ type: AIAssistantType) {
+            for k in keys { m[k.lowercased()] = type }
+        }
+        add(["claude code", "claude"], .claudeCode)
+        add(["codex", "openai codex", "openai codex cli"], .codex)
+        add(["gemini", "gemini cli", "google gemini", "google gemini cli"], .geminiCLI)
+        add(["cursor", "cursor agent"], .cursor)
+        add(["opencode", "open code", "open-code", "opencodes", "open-code cli"], .openCode)
+        add(["droid", "factory droid"], .droid)
+        return m
+    }()
+    
+    /// 将 `assistant` / `agent` 查询参数或钩子字段解析为枚举。
+    static func resolve(from raw: String?) -> AIAssistantType? {
+        let s = (raw ?? "").trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        if s.isEmpty { return nil }
+        if let a = allCases.first(where: { $0.executableName == s }) { return a }
+        if let a = allCases.first(where: { $0.rawValue.lowercased() == s }) { return a }
+        return aliasMap[s]
+    }
+    
+    /// 规范为可执行名（小写），便于任务列表与 hook 去重；未知 CLI 则退回原串小写。
+    static func canonicalExecutable(from raw: String) -> String {
+        let t = raw.trimmingCharacters(in: .whitespacesAndNewlines)
+        if let a = resolve(from: t) { return a.executableName }
+        return t.lowercased()
+    }
+}
+
 // Configuration status
 enum ConfigurationStatus {
     case notDetected

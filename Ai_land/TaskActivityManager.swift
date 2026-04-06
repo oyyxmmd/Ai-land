@@ -155,8 +155,9 @@ final class TaskActivityManager: ObservableObject {
             items.first { $0.name.lowercased() == name }?.value
         }
         guard let assistantRaw = val("assistant"),
-              let assistant = AiLandURLRouting.clampField(assistantRaw, maxChars: AiLandPayloadLimits.assistant),
-              !assistant.isEmpty else { return }
+              let assistantClamped = AiLandURLRouting.clampField(assistantRaw, maxChars: AiLandPayloadLimits.assistant),
+              !assistantClamped.isEmpty else { return }
+        let assistant = AIAssistantType.canonicalExecutable(from: assistantClamped)
         let state = (val("state") ?? "").lowercased()
         let taskId = {
             let raw = val("task_id")?.trimmingCharacters(in: .whitespacesAndNewlines).nonEmptyOrNil

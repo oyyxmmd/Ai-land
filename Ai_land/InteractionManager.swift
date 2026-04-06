@@ -335,28 +335,9 @@ final class InteractionManager: ObservableObject {
     }
     
     private static func resolveAssistant(from raw: String?) -> AIAssistantType {
-        let s = (raw ?? "").trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-        if s.isEmpty { return .claudeCode }
-        if let a = AIAssistantType.allCases.first(where: { $0.executableName.lowercased() == s }) { return a }
-        if let a = assistantAliasMap[s] { return a }
-        if let a = AIAssistantType.allCases.first(where: { $0.rawValue.lowercased() == s }) { return a }
+        if let a = AIAssistantType.resolve(from: raw) { return a }
         return .claudeCode
     }
-    
-    /// 兼容历史简称、文档与口语（与 `executableName` 及完整 `rawValue` 并列）。
-    private static let assistantAliasMap: [String: AIAssistantType] = {
-        var m: [String: AIAssistantType] = [:]
-        func add(_ keys: [String], _ type: AIAssistantType) {
-            for k in keys { m[k.lowercased()] = type }
-        }
-        add(["claude code", "claude"], .claudeCode)
-        add(["codex", "openai codex", "openai codex cli"], .codex)
-        add(["gemini", "gemini cli", "google gemini", "google gemini cli"], .geminiCLI)
-        add(["cursor", "cursor agent"], .cursor)
-        add(["opencode", "open code"], .openCode)
-        add(["droid", "factory droid"], .droid)
-        return m
-    }()
     
     func complete(choice: String) {
         guard let request = current else { return }
